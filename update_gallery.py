@@ -2,8 +2,8 @@ import os
 import re
 import urllib.parse
 
-design_dir = r"d:\New folder (7)\New folder (3)\assets\images\design"
-html_file = r"d:\New folder (7)\New folder (3)\index.html"
+design_dir = r"d:\New folder (7)\New folder (3)\My portfolio\assets\images\design"
+html_file = r"d:\New folder (7)\New folder (3)\My portfolio\index.html"
 
 images = []
 for f in os.listdir(design_dir):
