@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaa. | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Icons (Phosphor Icons or FontAwesome placeholder, let's use Phosphor) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+</head>
+<body class="light-theme">
+
+    <!-- Entrance Experience -->
+    <div id="entrance-overlay">
+        <div class="entrance-content">
+            <div class="door-container" id="door" title="Click to open">
+                <div class="door-illustration">
+                    <!-- The centered door image -->
+                    <img src="assets/images/door-bg-new.jpg" alt="A cozy wooden door surrounded by plants" class="door-img">
+                </div>
+                <p class="welcome-text">Hi, I am A'laa, Come on in ...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" class="hidden">
+        
+        <!-- Navbar -->
+        <nav id="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">Alaa. <i class="ph-fill ph-sparkle"></i></a>
+                <div class="nav-links">
+                    <a href="#home">Home</a>
+                    <a href="#games">Games</a>
+                    <a href="#design">Design</a>
+                    <a href="#books">Books</a>
+                    <a href="#systems">Systems</a>
+                    <a href="#about">About</a>
+                    <a href="#education">Education</a>
+                    <a href="#journal">Journal</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="nav-actions">
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="ph ph-moon"></i>
+                    </button>
+                    <!-- Mobile Menu Toggle -->
+                    <button id="mobile-menu-btn" class="mobile-only">
+                        <i class="ph ph-list"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Links Dropdown -->
+            <div class="mobile-menu hidden">
+                <a href="#home">Home</a>
+                <a href="#games">Games</a>
+                <a href="#design">Design</a>
+                <a href="#books">Books</a>
+                <a href="#systems">Systems</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#journal">Journal</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="greeting">Hi, I'm Alaa 🤍</p>
+                <h1 class="headline">I build ideas into experiences.</h1>
+                <p class="subtitle">Game Developer · Backend Engineer ·<br>Designer · Problem Solver</p>
+                <a href="#things-i-build" class="cta-button">Explore My World <i class="ph ph-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <!-- Things I Build -->
+        <section id="things-i-build" class="fade-in">
+            <div class="section-header">
+                <h2><i class="ph-fill ph-plant"></i> Things I Build</h2>
+                <p>Different skills, one mindset: turn ideas into real things.</p>
+            </div>
+            <div class="category-grid">
+                <a href="#games" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1552820728-8b83bb6b773f?q=80&w=300&h=150&fit=crop" alt="Games">
+                    <h3>Games</h3>
+                    <p>I create interactive worlds and playable experiences using Unity.</p>
+                    <i class="ph ph-arrow-right"></i>
+                </a>
+                <a href="#design" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?q=80&w=300&h=150&fit=crop" alt="Graphic Design">
+                    <h3>Design</h3>
+                    <p>Graphic Designer specializing in branding, social media, and visual identities using Photoshop and Canva.</p>
+                    <i class="ph ph-arrow-right"></i>
+                </a>
+                <a href="#books" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=300&h=150&fit=crop" alt="Books">
+                    <h3>Books & Stories</h3>
+                    <p>My designs for children's books, cards, and interactive stories.</p>
+                    <i class="ph ph-arrow-right"></i>
+                </a>
+                <a href="#systems" class="category-card">
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=300&h=150&fit=crop" alt="Systems">
+                    <h3>Systems</h3>
+                    <p>I build reliable backend systems and APIs that power things.</p>
+                    <i class="ph ph-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Games Section -->
+        <section id="games" class="fade-in">
+            <div class="section-header">
+                <h2><i class="ph-fill ph-game-controller"></i> Featured Games</h2>
+                <p>Interactive worlds I've built.</p>
+            </div>
+            <div class="games-grid">
+                <!-- Game Card 1 -->
+                <div class="game-card">
+                    <div class="game-card-inner">
+                        <div class="game-card-front">
+                            <img src="https://img.itch.zone/aW1nLzI1Nzc2MjA2LnBuZw==/315x250%23c/fD%2Blpa.png" alt="Forst Spirit">
+                            <div class="game-info">
+                                <h3>Forst Spirit</h3>
+                                <div class="tech-tags">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-card-back">
+                            <h3>Forst Spirit</h3>
+                            <p>An immersive adventure game where you play as a spirit navigating a magical forest. Collect items and uncover secrets.</p>
+                            <div class="card-actions" style="margin-top: 1rem;">
+                                <a href="https://alaa63.itch.io/forst-spirit" target="_blank" class="btn btn-outline">Play on itch.io</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game Card 2 -->
+                <div class="game-card">
+                    <div class="game-card-inner">
+                        <div class="game-card-front">
+                            <img src="https://img.itch.zone/aW1nLzI0NjQ4NTgzLnBuZw==/315x250%23c/LIObaQ.png" alt="Sea Taxi Adventure">
+                            <div class="game-info">
+                                <h3>Sea Taxi Adventure</h3>
+                                <div class="tech-tags">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-card-back">
+                            <h3>Sea Taxi Adventure</h3>
+                            <p>An exciting sea taxi simulation game. Drive your boat, pick up passengers, and navigate through challenging waters safely.</p>
+                            <div class="card-actions" style="margin-top: 1rem;">
+                                <a href="https://alaa63.itch.io/sea-taxi-adventure" target="_blank" class="btn btn-outline">Play on itch.io</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game Card 3 -->
+                <div class="game-card">
+                    <div class="game-card-inner">
+                        <div class="game-card-front">
+                            <img src="https://img.itch.zone/aW1nLzI3MjIyNDE4LnBuZw==/original/n%2BxHwQ.png" alt="ERAshift">
+                            <div class="game-info">
+                                <h3>ERAshift</h3>
+                                <div class="tech-tags">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-card-back">
+                            <h3>ERAshift</h3>
+                            <p>Travel through time, explore Egypt, Baghdad, and Al-Andalus, and uncover the secrets of lost civilizations in this historical journey!</p>
+                            <div class="card-actions" style="margin-top: 1rem;">
+                                <a href="https://weirdothen.itch.io/erashift" target="_blank" class="btn btn-outline">Play on itch.io</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Game Card 4 -->
+                <div class="game-card">
+                    <div class="game-card-inner">
+                        <div class="game-card-front">
+                            <img src="https://img.itch.zone/aW1nLzI1MzU1ODU2LnBuZw==/original/bW2p8M.png" alt="Logic Rift">
+                            <div class="game-info">
+                                <h3>Logic Rift</h3>
+                                <div class="tech-tags">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="game-card-back">
+                            <h3>Logic Rift</h3>
+                            <p>A mind-bending puzzle game. Solve intricate logic challenges, manipulate the environment, and navigate safely through the rift.</p>
+                            <div class="card-actions" style="margin-top: 1rem;">
+                                <a href="https://birdbox774.itch.io/logic-rift" target="_blank" class="btn btn-outline">Play on itch.io</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Design Section -->
+        <section id="design" class="fade-in">
+            <div class="section-header">
+                <h2><i class="ph-fill ph-palette"></i> Design Work</h2>
+                <p>Branding, visual experiments, and my graphic design work for FCAI Game Dev Club.</p>
+            </div>
+
+            <!-- Rawaq Brand Feature -->
+            <div class="brand-feature-card">
+                <h3><i class="ph-fill ph-crown"></i> Founder & Owner of Rawaq (رَوَّق)</h3>
+                <p>I am the proud founder and business owner of <strong>Rawaq</strong>. I built this social brand from the ground up, handling everything from its core brand identity and graphic design to managing its overall social media presence.</p>
+                <div class="brand-links">
+                    <a href="https://www.facebook.com/profile.php?id=61590751472790&locale=ar_AR" target="_blank" class="btn btn-primary"><i class="ph-fill ph-facebook-logo"></i> Facebook Page</a>
+                    <a href="https://www.instagram.com/rawq_63?igsh=MWl2M216OWJvejFraw==" target="_blank" class="btn btn-outline"><i class="ph-fill ph-instagram-logo"></i> Instagram</a>
+                </div>
+            </div>
+
+            <div class="masonry-gallery">
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/1.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/10.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/11.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/111.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/19.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/2.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/21.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/22.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/222.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/24.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/3.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/4.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/5.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/55.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/6%20Feb%202026%2010%20AM.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/6.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/664.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/7.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/8.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/888.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/9.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/999.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/Aesthetic%20Autumn%20Moodboard%20Photo%20Collage%20Instagram%20Post.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/Beige%20Geometric%20Mega%20Deals%20Furniture%20Retractable%20Banner.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/Black%20and%20White%20Vintage%20Newspaper%20Product%20Launch%20Press%20Release%20Instagram%20Post.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/Blue%20and%20Gold%20Modern%20Achievement%20Certificate.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/FCAI%20GAME%20DEV%20COMMUNITY.jpg" alt="FCAI-Cu Game Dev">
+                    <div class="item-overlay">
+                        <span>FCAI-Cu Game Dev</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/Happy.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/Let%20your%20colors%20speak%20for%20your%20effort..jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/Neutral%20Beauty%20Hairstyle%20Before%20After%20Photo%20Collage%20Instagram%20Post.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/NewMemberPost.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/Red%20and%20Yellow%20Retro%20Scan%20To%20Pay%20Instagram%20Post.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/RTF.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A8%D8%AF%D9%88%D9%86%20%D8%B9%D9%86%D9%88%D8%A7%D9%86%20%281%29.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D8%AA%D8%B5%D9%85%D9%8A%D9%85%20%D8%A8%D8%AF%D9%88%D9%86%20%D8%B9%D9%86%D9%88%D8%A7%D9%86%20%282%29.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D8%B1%D9%88%D9%82.jpg" alt="Rawaq (Brand Owner)">
+                    <div class="item-overlay">
+                        <span>Rawaq (Brand Owner)</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D8%B1%D9%88%D9%821.jpg" alt="Rawaq (Brand Owner)">
+                    <div class="item-overlay">
+                        <span>Rawaq (Brand Owner)</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D8%B1%D9%88%D9%823.jpg" alt="Rawaq (Brand Owner)">
+                    <div class="item-overlay">
+                        <span>Rawaq (Brand Owner)</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D8%B1%D9%88%D9%824.jpg" alt="Rawaq (Brand Owner)">
+                    <div class="item-overlay">
+                        <span>Rawaq (Brand Owner)</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D9%84%D9%88%D9%84.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D9%84%D9%88%D9%84%D8%A7.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D9%85%D9%86%D8%B4%D9%88%D8%B1%20Instagram%20%20%D8%A8%D9%86%D9%8A%20%D9%88%20%D8%A8%D9%8A%D8%AC%20%D8%A8%D8%B3%D9%8A%D8%B7%20%D8%B9%D9%8A%D8%AF%20%D9%85%D8%A8%D8%A7%D8%B1%D9%83.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D9%86%D8%B3%D8%AE%D8%A9%20%D9%85%D9%86%20Blue%20and%20Green%20Modern%20Gradient%20Trivia%20Night%20Game%20Presentation.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D9%86%D8%B3%D8%AE%D8%A9%20%D9%85%D9%86%20Blue%20And%20White%20Modern%20Important%20Announcement%20Instagram%20Post.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+                <div class="gallery-item" onclick="openLightbox(this)">
+                    <img src="assets/images/design/%D9%86%D8%B3%D8%AE%D8%A9%20%D9%85%D9%86%20Red%20Black%20and%20White%20Modern%20Enrollment%20Closing%20Countdown%20Instagram%20Post.jpg" alt="Design Work">
+                    <div class="item-overlay">
+                        <span>Design Work</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Books & Stories Section -->
+        <section id="books" class="fade-in">
+            <div class="section-header">
+                <h2><i class="ph-fill ph-book-open"></i> Books & Stories</h2>
+                <p>My designs for children's books, cards, and interactive stories.</p>
+            </div>
+            <div class="books-grid">
+                <div class="book-card" onclick="openPdfViewer('assets/books/Animals.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/Animals.png" alt="Animal Kingdom Discovery Cards Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Animal Kingdom Discovery Cards</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/BodyParts.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/BodyParts.png" alt="Human Anatomy for Kids Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Human Anatomy for Kids</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/english%20salma%203.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/english%20salma%203.png" alt="Early English Learning: Vol 3 Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Early English Learning: Vol 3</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/final%20Arabic%20m%20salma%20%281%29.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/final%20Arabic%20m%20salma%20%281%29.png" alt="Arabic Foundations for Beginners Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Arabic Foundations for Beginners</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/fruits.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/fruits.png" alt="Fruit Explorer: Vocabulary Cards Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Fruit Explorer: Vocabulary Cards</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/math%201%202%203.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/math%201%202%203.png" alt="First Steps in Mathematics Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>First Steps in Mathematics</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/math%20m%20salma.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/math%20m%20salma.png" alt="Interactive Math Workbook Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Interactive Math Workbook</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/phonics.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/phonics.png" alt="Phonics & Sound Mastery Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Phonics & Sound Mastery</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/pre%20kg%20%20123.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/pre%20kg%20%20123.png" alt="Pre-K Numbers & Counting Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Pre-K Numbers & Counting</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/pre%20kg%20%28letters%29%20final.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/pre%20kg%20%28letters%29%20final.png" alt="Pre-K Alphabet Adventure Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Pre-K Alphabet Adventure</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/Rectangle%201.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/Rectangle%201.png" alt="Shapes & Geometry Basics Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Shapes & Geometry Basics</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/vegetables.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/vegetables.png" alt="Vegetable Garden Vocabulary Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Vegetable Garden Vocabulary</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%201.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/%D8%A7%D9%84%D8%AD%D8%B3%D8%A7%D8%A8%201.png" alt="Mathematics Essentials (Arabic) Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Mathematics Essentials (Arabic)</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%D8%A7%D8%AA.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/%D8%A7%D9%84%D8%AD%D9%8A%D9%88%D8%A7%D9%86%D8%A7%D8%AA.png" alt="Wonders of Animals (Arabic) Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Wonders of Animals (Arabic)</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/%D8%AA%D8%AC%D9%85%D9%8A%D8%B9%D8%A9%20%D8%A7%D9%84%D9%83%D9%88%D8%AA.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/%D8%AA%D8%AC%D9%85%D9%8A%D8%B9%D8%A9%20%D8%A7%D9%84%D9%83%D9%88%D8%AA.png" alt="Learning Cards Collection Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Learning Cards Collection</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/%D9%81%D8%A7%D9%83%D9%87%D9%87%20%D9%88%D8%AE%D8%B6%D8%A7%D8%B1.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/%D9%81%D8%A7%D9%83%D9%87%D9%87%20%D9%88%D8%AE%D8%B6%D8%A7%D8%B1.png" alt="Fruits & Veggies Vocabulary (Arabic) Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Fruits & Veggies Vocabulary (Arabic)</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/%D9%83%D8%B1%D9%88%D8%AA%20%D8%A7%D9%84%D8%A7%D9%84%D9%88%D8%A7%D9%86%20%D9%85%D8%B3%20%D8%B3%D9%84%D9%85%D9%89.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/%D9%83%D8%B1%D9%88%D8%AA%20%D8%A7%D9%84%D8%A7%D9%84%D9%88%D8%A7%D9%86%20%D9%85%D8%B3%20%D8%B3%D9%84%D9%85%D9%89.png" alt="Color Spectrum Learning Cards Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Color Spectrum Learning Cards</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/%D9%83%D8%B1%D9%88%D8%AA%20%D8%A7%D9%84%D9%81%D9%88%D8%A7%D9%83%D9%87%20%D9%85%20%D8%B3%D9%84%D9%85%D9%89.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/%D9%83%D8%B1%D9%88%D8%AA%20%D8%A7%D9%84%D9%81%D9%88%D8%A7%D9%83%D9%87%20%D9%85%20%D8%B3%D9%84%D9%85%D9%89.png" alt="Fruit Discovery Cards Collection Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Fruit Discovery Cards Collection</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA%202.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/%D9%85%D9%87%D8%A7%D8%B1%D8%A7%D8%AA%202.png" alt="Cognitive Skills Development: Level 2 Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Cognitive Skills Development: Level 2</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+                <div class="book-card" onclick="openPdfViewer('assets/books/%D9%85%D9%87%D8%A7%D9%85%20%D9%85%20%D8%B3%D9%84%D9%85%D9%89.pdf')" style="cursor: pointer;">
+                    <div class="book-cover" style="padding: 0; border-bottom: none;">
+                        <img src="assets/images/books_covers/%D9%85%D9%87%D8%A7%D9%85%20%D9%85%20%D8%B3%D9%84%D9%85%D9%89.png" alt="Daily Tasks & Activities Workbook Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="book-info">
+                        <h3>Daily Tasks & Activities Workbook</h3>
+                        <p>Educational Material</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Systems / Backend -->
+        <section id="systems" class="fade-in">
+            <div class="section-header">
+                <h2><i class="ph-fill ph-hard-drives"></i> Systems & Backend</h2>
+                <p>The logic behind the screen.</p>
+            </div>
+            <div class="systems-grid">
+                <div class="system-card">
+                    <div class="system-diagram">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=400&h=200&fit=crop" alt="Backend System Code">
+                    </div>
+                    <div class="system-info">
+                        <h3>My First Backend System</h3>
+                        <p>A comprehensive web development backend system built with Python and Django. Check out my full documentation and code walkthrough on LinkedIn.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://www.linkedin.com/posts/alaaazima_webdevelopment-django-python-ugcPost-7467270069929041922-L_Me/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEwIgKYBx36fsqxsqDnHaYWQ7d_Up5uxBs8" target="_blank" class="btn btn-outline"><i class="ph-fill ph-linkedin-logo"></i> View Post</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="system-card">
+                    <div class="system-diagram">
+                        <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?q=80&w=400&h=200&fit=crop" alt="Software Engineering Code">
+                    </div>
+                    <div class="system-info">
+                        <h3>Advanced Backend System</h3>
+                        <p>An advanced backend architecture built with Django focusing on software engineering principles and scalability.</p>
+                        <div class="tech-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Software Engineering</span>
+                        </div>
+                        <div class="card-actions">
+                            <a href="https://www.linkedin.com/posts/alaaazima_softwareengineering-django-webdevelopment-ugcPost-7459176590564896770-Nl47/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEwIgKYBx36fsqxsqDnHaYWQ7d_Up5uxBs8" target="_blank" class="btn btn-outline"><i class="ph-fill ph-linkedin-logo"></i> View Post</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="fade-in">
+            <div class="about-container">
+                <div class="about-text">
+                    <h2><i class="ph-fill ph-heart"></i> A little bit about me</h2>
+                    <p>I'm a Computer Science student with a deep love for building things that combine logic and creativity.</p>
+                    <p>I enjoy solving problems, learning new technologies, and turning random ideas into real projects. Whether it's architecting a backend system, designing a user interface, or coding a game mechanic, I love the entire process of creation.</p>
+                    <a href="assets/CV.pdf" class="btn btn-primary download-cv" download>Download CV <i class="ph ph-download-simple"></i></a>
+                </div>
+                <div class="about-visual">
+                    <div class="polaroid-large">
+                        <img src="assets/images/alaa-circle.jpg" alt="Alaa at her desk">
+                        <p class="caption">In my element 🌿</p>
+                    </div>
+                    <div class="sticky-note">
+                        <p>Currently: building my handmade brand and a new game!</p>
+                        <i class="ph-fill ph-sparkle"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="education" class="fade-in">
+            <div class="section-header center">
+                <h2><i class="ph-fill ph-graduation-cap"></i> Education & Teaching</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card">
+                        <h3>BSc Computer Science & Artificial Intelligence</h3>
+                        <p style="color: var(--accent-terracotta); font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem;">Faculty of Computers and Artificial Intelligence, Cairo University · Expected 2028</p>
+                        <p>Focusing on software engineering, data structures, algorithms, and system design.</p>
+                        <ul class="coursework" style="list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.5rem;">
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Data Structures</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">OOP</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Database Systems</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Web Development</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Computer Networks</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Statistics</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Discrete Mathematics</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Logic Design</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Structured Programming</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Electronics</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Mathematics</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">Unity</li>
+                            <li style="background: var(--bg-secondary); padding: 0.3rem 0.8rem; border-radius: 20px; font-size: 0.85rem; color: var(--text-color);">C#</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="border-color: #FF0000;"></div>
+                    <div class="timeline-content card">
+                        <h3><i class="ph-fill ph-youtube-logo" style="color: #FF0000; vertical-align: middle;"></i> Content Creator & Tutor</h3>
+                        <p style="color: var(--text-secondary); font-weight: 600; font-size: 1.1rem; margin-bottom: 1rem;">YouTube Channel: Decode it | Alaa</p>
+                        <p>I run an educational YouTube channel where I simplify and explain complex computer science subjects. My main series covers a full <strong>Logic Design</strong> course, helping students understand the fundamentals of digital electronics and circuits.</p>
+                        <div class="card-actions" style="margin-top: 1.5rem;">
+                            <a href="https://www.youtube.com/@Alaa_Azima" target="_blank" class="btn btn-outline" style="border-color: #FF0000; color: #FF0000;">Visit Channel</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journal / Quotes -->
+        <section id="journal" class="fade-in">
+            <div class="journal-container">
+                <div class="section-header">
+                    <h2><i class="ph-fill ph-book-open-text"></i> From My Journal</h2>
+                </div>
+                <div class="quote-cards-wrapper">
+                    <div class="quote-card personal-quote">
+                        <p>"Progress is not about being perfect. It's about being consistent."</p>
+                        <span class="author">— Alaa</span>
+                    </div>
+                    <div class="quote-card quranic-quote">
+                        <p class="arabic-text" dir="rtl">"ومن يتق الله يجعل له مخرجًا، ويرزقه من حيث لا يحتسب، ومن يتوكل على الله فهو حسبه"</p>
+                        <span class="author">Surah At-Talaq, verses 2–3</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tools & Technologies -->
+        <section id="tools" class="fade-in">
+            <div class="section-header">
+                <h2><i class="ph-fill ph-toolbox"></i> Tools & Technologies</h2>
+                <p>Some of the tools I use to build and design.</p>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-item"><i class="ph ph-cube"></i><span>Unity</span></div>
+                <div class="tool-item"><i class="ph ph-hash"></i><span>C#</span></div>
+                <div class="tool-item"><i class="ph ph-file-js"></i><span>JavaScript</span></div>
+                <div class="tool-item"><i class="ph ph-file-html"></i><span>HTML/CSS</span></div>
+                <div class="tool-item"><i class="ph-fill ph-hexagon"></i><span>Node.js</span></div>
+                <div class="tool-item"><i class="ph ph-database"></i><span>MongoDB</span></div>
+                <div class="tool-item"><i class="ph ph-figma-logo"></i><span>Figma</span></div>
+                <div class="tool-item"><i class="ph ph-paint-brush"></i><span>Photoshop</span></div>
+                <div class="tool-item"><i class="ph ph-git-branch"></i><span>Git</span></div>
+                <div class="tool-item"><i class="ph ph-code"></i><span>VS Code</span></div>
+            </div>
+        </section>
+
+        <!-- Footer / Contact -->
+        <footer id="contact">
+            <div class="footer-content fade-in">
+                <div class="contact-cta">
+                    <h2><i class="ph-fill ph-paper-plane-tilt"></i> Let's build something together</h2>
+                    <p>I'm always open to new opportunities and interesting ideas.</p>
+                    <a href="mailto:alaaazima632006@gmail.com" class="btn btn-outline">Contact Me <i class="ph ph-arrow-right"></i></a>
+                </div>
+                <div class="footer-brand">
+                    <a href="#home" class="logo-large">Alaa. <i class="ph-fill ph-sparkle"></i></a>
+                    <p>Turning ideas into experiences.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/AlaaAzima" target="_blank" aria-label="GitHub"><i class="ph-fill ph-github-logo"></i></a>
+                        <a href="https://www.linkedin.com/in/alaaazima" target="_blank" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+                        <a href="https://alaa63.itch.io/" target="_blank" aria-label="Itch.io"><i class="ph-fill ph-game-controller"></i></a>
+                        <a href="https://www.youtube.com/@Alaa_Azima" target="_blank" aria-label="YouTube"><i class="ph-fill ph-youtube-logo"></i></a>
+                        <a href="mailto:alaaazima632006@gmail.com" aria-label="Email"><i class="ph-fill ph-envelope-simple"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2026 Alaa. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- PDF Viewer Modal -->
+    <div id="pdf-modal" class="hidden">
+        <div class="pdf-modal-content">
+            <div class="pdf-header">
+                <h3><i class="ph-fill ph-book-open"></i> Reading Mode</h3>
+                <span class="close-pdf" onclick="closePdfModal()">&times;</span>
+            </div>
+            <div class="pdf-iframe-container">
+                <div class="pdf-loading" id="pdf-loading">
+                    <i class="ph ph-spinner-gap"></i>
+                    <p>Loading Book...</p>
+                </div>
+                <iframe id="pdf-iframe" src="" onload="hidePdfLoading()" width="100%" height="100%" style="border: none; position: relative; z-index: 1; width: 100%; height: 100%;"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="hidden">
+        <span class="close-lightbox" onclick="closeLightbox()"><i class="ph ph-x"></i></span>
+        <img id="lightbox-img" src="" alt="Enlarged design work">
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
